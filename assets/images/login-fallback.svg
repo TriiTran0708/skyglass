@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1873c4"/><stop offset=".55" stop-color="#66c0f2"/><stop offset="1" stop-color="#dcf6ff"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8be8f0"/><stop offset=".45" stop-color="#2eaedb"/><stop offset="1" stop-color="#0c68ad"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset=".4" stop-color="#fffbe0" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bub" cx=".35" cy=".3" r=".75">
+      <stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset=".3" stop-color="#fff" stop-opacity=".15"/>
+      <stop offset=".8" stop-color="#9fe6ff" stop-opacity=".25"/><stop offset="1" stop-color="#fff" stop-opacity=".75"/>
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="2.5"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1280" cy="300" r="340" fill="url(#sun)"/>
+  <g fill="#fff" filter="url(#blur)" opacity=".95">
+    <ellipse cx="260" cy="190" rx="230" ry="52"/><ellipse cx="380" cy="150" rx="150" ry="58"/><ellipse cx="170" cy="160" rx="110" ry="42"/>
+    <ellipse cx="1180" cy="120" rx="220" ry="46"/><ellipse cx="1300" cy="95" rx="130" ry="46"/>
+    <ellipse cx="720" cy="330" rx="260" ry="36" opacity=".7"/>
+  </g>
+  <g fill="#fff" filter="url(#blur)" opacity=".85">
+    <ellipse cx="1420" cy="430" rx="260" ry="40"/><ellipse cx="200" cy="470" rx="240" ry="36"/>
+  </g>
+  <rect y="540" width="1600" height="40" fill="#e6fbff" opacity=".6" filter="url(#blur)"/>
+  <rect y="560" width="1600" height="340" fill="url(#sea)"/>
+  <g fill="#fff" opacity=".35" filter="url(#soft)">
+    <ellipse cx="1280" cy="600" rx="260" ry="6"/><ellipse cx="1280" cy="640" rx="180" ry="5"/><ellipse cx="1290" cy="690" rx="120" ry="5"/>
+    <ellipse cx="300" cy="620" rx="200" ry="4"/><ellipse cx="460" cy="720" rx="260" ry="5"/><ellipse cx="900" cy="780" rx="320" ry="5"/>
+  </g>
+  <g>
+    <circle cx="160" cy="740" r="70" fill="url(#bub)" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>
+    <circle cx="260" cy="650" r="26" fill="url(#bub)" stroke="#fff" stroke-opacity=".7"/>
+    <circle cx="1420" cy="760" r="96" fill="url(#bub)" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>
+    <circle cx="1330" cy="650" r="34" fill="url(#bub)" stroke="#fff" stroke-opacity=".7"/>
+    <circle cx="90" cy="420" r="18" fill="url(#bub)" stroke="#fff" stroke-opacity=".6"/>
+    <circle cx="1510" cy="460" r="22" fill="url(#bub)" stroke="#fff" stroke-opacity=".6"/>
+  </g>
+</svg>

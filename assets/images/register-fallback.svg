@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2284d4"/><stop offset=".5" stop-color="#7ccdf4"/><stop offset="1" stop-color="#e3f8ff"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fe0ee"/><stop offset="1" stop-color="#2a9ed0"/>
+    </linearGradient>
+    <linearGradient id="h1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8be66a"/><stop offset="1" stop-color="#35a846"/>
+    </linearGradient>
+    <linearGradient id="h2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5fd058"/><stop offset="1" stop-color="#1f8a3a"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff"/><stop offset=".45" stop-color="#fffbe0" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb" cx=".35" cy=".28" r=".85">
+      <stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset=".25" stop-color="#c4f3ff" stop-opacity=".6"/>
+      <stop offset=".65" stop-color="#3aaee8" stop-opacity=".6"/><stop offset="1" stop-color="#0b5fb0" stop-opacity=".85"/>
+    </radialGradient>
+    <radialGradient id="bub" cx=".35" cy=".3" r=".75">
+      <stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset=".3" stop-color="#fff" stop-opacity=".15"/>
+      <stop offset=".8" stop-color="#9fe6ff" stop-opacity=".25"/><stop offset="1" stop-color="#fff" stop-opacity=".75"/>
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="280" cy="250" r="360" fill="url(#sun)"/>
+  <g fill="#fff" filter="url(#blur)" opacity=".95">
+    <ellipse cx="900" cy="160" rx="260" ry="50"/><ellipse cx="1040" cy="125" rx="160" ry="54"/>
+    <ellipse cx="1420" cy="260" rx="200" ry="40"/><ellipse cx="520" cy="320" rx="220" ry="32" opacity=".7"/>
+  </g>
+  <rect y="470" width="1600" height="150" fill="url(#sea)"/>
+  <rect y="455" width="1600" height="30" fill="#effcff" opacity=".6" filter="url(#blur)"/>
+  <path d="M0 520 Q300 440 640 500 T1280 470 T1600 500 V900 H0Z" fill="url(#h1)"/>
+  <path d="M0 640 Q260 560 560 620 T1160 600 T1600 640 V900 H0Z" fill="url(#h2)"/>
+  <path d="M0 780 Q300 700 700 760 T1600 740 V900 H0Z" fill="#2c9a3c"/>
+  <g fill="#fff" opacity=".5">
+    <circle cx="260" cy="700" r="3"/><circle cx="520" cy="740" r="2.5"/><circle cx="900" cy="690" r="3"/><circle cx="1240" cy="760" r="3"/>
+    <circle cx="700" cy="810" r="2.5"/><circle cx="1400" cy="700" r="2.5"/>
+  </g>
+  <circle cx="1330" cy="560" r="120" fill="url(#orb)" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>
+  <circle cx="210" cy="520" r="64" fill="url(#orb)" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>
+  <g>
+    <circle cx="1460" cy="380" r="30" fill="url(#bub)" stroke="#fff" stroke-opacity=".7"/>
+    <circle cx="140" cy="360" r="22" fill="url(#bub)" stroke="#fff" stroke-opacity=".7"/>
+    <circle cx="1190" cy="430" r="16" fill="url(#bub)" stroke="#fff" stroke-opacity=".6"/>
+    <circle cx="360" cy="430" r="14" fill="url(#bub)" stroke="#fff" stroke-opacity=".6"/>
+  </g>
+</svg>
